@@ -28,7 +28,7 @@ Copyright (C) First Floor Software. All rights reserved.
       <PreprocessorDefinitions Condition="'$(PreprocessorDefinitions)' != ''">$(PreprocessorDefinitions);XCC</PreprocessorDefinitions>
       
       <!-- support for Visual C++ projects (will override the definition above as 'DefineConstants' and 'ClCompile.PreprocessorDefinitions' cannot be co-existant) -->
-      <PreprocessorDefinitions Condition="%(ClCompile.PreprocessorDefinitions) != ''">%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <!--<PreprocessorDefinitions Condition="%(ClCompile.PreprocessorDefinitions) != ''">%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>-->
     </PropertyGroup>
 
     <!-- ensure __ANDROID__ symbol is defined when targetting Android platform with .NET -->
